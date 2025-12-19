@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  {SERVICE_NAME}:
+    image: trumio_design-system
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ../docker_container_logs:/code/logs
+    ports:
+      - {SERVICE_PORT}:{TARGET_PORT}
+    logging:
+      driver: local
+      options:
+        mode: "non-blocking"
+        max-buffer-size: "2m"
+        max-size: "10m"
+        max-file: "3"
+
+    restart: always

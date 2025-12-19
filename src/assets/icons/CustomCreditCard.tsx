@@ -1,0 +1,26 @@
+import React from 'react';
+import { CustomIconProps } from './types'; // Import the type
+
+export const CustomCreditCard: React.FC<CustomIconProps> = ({ width = 24, height = 24, color = '#6E6B7B' }) => {
+  return (
+    <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M21 3H3C1.3 3 0 4.3 0 6V18C0 19.7 1.3 21 3 21H21C22.7 21 24 19.7 24 18V6C24 4.3 22.7 3 21 3ZM3 5H21C21.6 5 22 5.4 22 6V9H2V6C2 5.4 2.4 5 3 5ZM3 19H21C21.6 19 22 18.6 22 18V11H2V18C2 18.6 2.4 19 3 19Z"
+        fill={color}
+      />
+      <mask id="mask0" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="0" y="3" width="24" height="18">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M21 3H3C1.3 3 0 4.3 0 6V18C0 19.7 1.3 21 3 21H21C22.7 21 24 19.7 24 18V6C24 4.3 22.7 3 21 3ZM3 5H21C21.6 5 22 5.4 22 6V9H2V6C2 5.4 2.4 5 3 5ZM3 19H21C21.6 19 22 18.6 22 18V11H2V18C2 18.6 2.4 19 3 19Z"
+          fill="white"
+        />
+      </mask>
+      <g mask="url(#mask0)">
+        <rect width="24" height="24" fill={color} />
+      </g>
+    </svg>
+  );
+};

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  :root {
+    --primary-bg: '#0065C1';
+    --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+@theme {
+  --color-glow-300: '#8FA2B2';
+  --color-primary-500: #0065c1;
+  --color-secondary-500: #0185e4;
+  --color-secondary-50: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), #0185e4;
+  --color-error: #ea5455;
+  --color-error-100: #fceaeb;
+  --color-error-50: #fdeeee;
+  --color-charcoal-overlay: #21212180;
+  --color-body-text: #6e6b7b;
+  --color-secondary-300: #82868b;
+  --color-disable-Blue: #99c1e6;
+  --color-disable-error: #f7bbbb;
+  --color-grayish-600: #5e5873;
+  --color-blue-600: #1e88e5;
+  --color-blue-700: #2196f3;
+  --color-orange-fair: #fd7e14;
+  --color-green-strength: #28c76f;
+  --color-green-100: #e5f8ee;
+  --color-neutral-500: #9e9e9e;
+  --color-neutral-200: #e6e7e7;
+  --color-neutral-100: #bdbdbd;
+  --color-neutral-50: #e6f3fc;
+  --color-blue-accent: #00b2ff26;
+  --color-blue-accent-100: #e4f2fe;
+  --color-blue-accent-200: #1cade3;
+  --color-blue-accent-300: #e1f0fc;
+  --color-steel-gray: #5f6d7e;
+  --color-teal-500: #008495;
+  --color-border-input: #d8d6de;
+  --color-option-bg: #0185e41f;
+  --color-black-400: #323232;
+  --color-black-300: #757575;
+  --color-grey-50: #e6e7e7;
+  --color-grey-700: #394042;
+  --color-grey-900: #071013;
+  --color-grey-border: #ebe9f1;
+  --color-custom-grey-500: #6a7071;
+  --color-dark: #071013;
+  --color-custom-bg: rgba(187, 222, 251, 0.12);
+  --shadow-primary-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+  --shadow-primary-hover: 0px 6px 16px 0px rgba(0, 101, 193, 0.5);
+  --shadow-error-hover: 0px 6px 16px 0px rgba(234, 84, 85, 0.5);
+  --shadow-custom-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+  --font-Montserrat: 'Montserrat';
+  --color-chart-tooltip-bg: #ffffff;
+  --color-chart-tooltip-text: #6e6b7b;
+  --color-chart-tooltip-border: #e6e6e6;
+  --color-chart-tooltip-label: #82868b;
+  --color-chart-tooltip-value: #5e5873;
+  --color-chart-wow-icon: #26b4e6;
+  --color-bar-default: #0185e4;
+  --color-bar-text: #6e6b7b;
+  --color-bar-label: #82868b;
+  --color-bar-value: #5e5873;
+  --color-bar-wow: #26b4e6;
+  --color-bar-grid: #e6e6e6;
+  --color-bar-card-bg: #ffffff;
+  --color-bar-card-border: #e6e6e6;
+  --color-blue: #0185e4;
+  --color-gray: #6e6b7b;
+  --color-gray-light: #82868b;
+  --color-gray-dark: #5e5873;
+  --color-light-gray: #e6e7e7;
+  --color-cyan: #26b4e6;
+  --color-gray-border: #e6e6e6;
+  --color-white: #ffffff;
+  --color-orange-500: #ff9f43;
+  --color-orange-100: rgba(255, 159, 67, 0.12);
+  --color-purple-500: #7c4dff;
+  --color-purple-100: rgba(124, 77, 255, 0.12);
+  --color-cyan-500: #00bcd4;
+  --color-cyan-100: rgba(0, 188, 212, 0.12);
+  --color-Grey-900: #071013;
+  --color-Grey-800: #1e1e1e;
+  --color-Grey-700: #394042;
+  --color-Grey-600: #6e6b7b;
+
+  --color-Grey-400: #838889;
+  --color-Grey-300: #9e9e9e;
+  --color-Grey-50: #e6e7e7;
+  --color-success-500: #28c76f;
+  --color-yellow-500: #fbc02d;
+  --color-custom-grey-600: #515759;
+  --color-info-bg: #003d74;
+  --color-success-bg: #e9faf2;
+  --color-warning-bg: #e65100;
+  --color-error-bg: #feedee;
+  --shadow-custom-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+  --shadow-emptyState: 0px 0px 24px 0px rgba(0, 0, 0, 0.06);
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+@layer utilities {
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #e6e6e6 transparent;
+  }
+
+  .chart-scrollbar {
+    scrollbar-color: #e6e7e7 transparent;
+  }
+
+  .chart-scrollbar::-webkit-scrollbar {
+    height: 16px;
+  }
+
+  .chart-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .chart-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #e6e7e7;
+    border-radius: 4px;
+  }
+
+  .chart-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #d1d5db;
+  }
+
+  .chart-scrollbar::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}

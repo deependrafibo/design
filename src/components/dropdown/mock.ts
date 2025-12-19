@@ -1,0 +1,40 @@
+import { Option } from './types';
+
+export const sampleOptions: Option[] = [
+  { label: 'Frontend Developer', value: 'frontend' },
+  { label: 'Backend Developer', value: 'backend' },
+  { label: 'UI/UX Designer', value: 'designer' },
+  { label: 'QA Engineer', value: 'qa' },
+  { label: 'Project Manager', value: 'pm' },
+  { label: 'Product Owner', value: 'po' },
+  { label: 'Scrum Master', value: 'sm' },
+];
+
+export const largeSampleOptions: Option[] = [
+  ...sampleOptions,
+  { label: 'DevOps Engineer', value: 'devops' },
+  { label: 'Data Scientist', value: 'data_scientist' },
+  { label: 'Data Analyst', value: 'data_analyst' },
+  { label: 'Full Stack Developer', value: 'fullstack' },
+  { label: 'Mobile Developer', value: 'mobile' },
+  { label: 'Technical Writer', value: 'tech_writer' },
+  { label: 'System Administrator', value: 'sysadmin' },
+  { label: 'Database Administrator', value: 'dba' },
+  { label: 'Software Architect', value: 'architect' },
+  { label: 'Security Engineer', value: 'security' },
+  { label: 'Cloud Engineer', value: 'cloud' },
+  { label: 'Machine Learning Engineer', value: 'ml_engineer' },
+  { label: 'Business Analyst', value: 'ba' },
+  { label: 'UX Researcher', value: 'ux_researcher' },
+  { label: 'Game Developer', value: 'game_dev' },
+  { label: 'Embedded Systems Engineer', value: 'embedded' },
+  { label: 'Network Engineer', value: 'network' },
+  { label: 'Site Reliability Engineer', value: 'sre' },
+  { label: 'Technical Consultant', value: 'consultant' },
+  { label: 'CTO', value: 'cto' },
+  { label: 'CIO', value: 'cio' },
+  { label: 'IT Support Specialist', value: 'it_support' },
+  { label: 'Blockchain Developer', value: 'blockchain' },
+  { label: 'AR/VR Developer', value: 'ar_vr' },
+  { label: 'IoT Developer', value: 'iot' },
+];

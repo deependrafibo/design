@@ -1,0 +1,32 @@
+import React from 'react';
+import { CustomIconProps } from './types';
+
+export const CustomPause: React.FC<CustomIconProps> = ({ width = 24, height = 24, color = '#6E6B7B' }) => (
+  <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M6 3H10C10.6 3 11 3.4 11 4V20C11 20.6 10.6 21 10 21H6C5.4 21 5 20.6 5 20V4C5 3.4 5.4 3 6 3ZM7 19H9V5H7V19ZM18 3H14C13.4 3 13 3.4 13 4V20C13 20.6 13.4 21 14 21H18C18.6 21 19 20.6 19 20V4C19 3.4 18.6 3 18 3ZM15 19H17V5H15V19Z"
+      fill={color}
+    />
+    <mask
+      id="mask0_4007_47458"
+      style={{ maskType: 'luminance' }}
+      maskUnits="userSpaceOnUse"
+      x="5"
+      y="3"
+      width="14"
+      height="18"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M6 3H10C10.6 3 11 3.4 11 4V20C11 20.6 10.6 21 10 21H6C5.4 21 5 20.6 5 20V4C5 3.4 5.4 3 6 3ZM7 19H9V5H7V19ZM18 3H14C13.4 3 13 3.4 13 4V20C13 20.6 13.4 21 14 21H18C18.6 21 19 20.6 19 20V4C19 3.4 18.6 3 18 3ZM15 19H17V5H15V19Z"
+        fill="white"
+      />
+    </mask>
+    <g mask="url(#mask0_4007_47458)">
+      <rect width="24" height="24" fill={color} />
+    </g>
+  </svg>
+);

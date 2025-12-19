@@ -1,0 +1,28 @@
+import React from 'react';
+import { CustomIconProps } from './types';
+
+export const CustomActivity: React.FC<CustomIconProps> = ({ width = 24, height = 24, color = '#6E6B7B' }) => (
+  <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M15 22C14.6 22 14.2 21.7 14.1 21.3L9 6.2L6.9 12.4C6.8 12.7 6.4 13 6 13H2C1.4 13 1 12.6 1 12C1 11.4 1.4 11 2 11H5.3L8.1 2.7C8.2 2.3 8.6 2 9 2C9.4 2 9.8 2.3 9.9 2.7L15 17.8L17.1 11.6C17.2 11.2 17.6 10.9 18 10.9H22C22.6 10.9 23 11.3 23 11.9C23 12.5 22.6 12.9 22 12.9H18.7L15.9 21.2C15.8 21.7 15.4 22 15 22Z"
+      fill={color}
+    />
+    <mask
+      id="mask0_4007_43970"
+      style={{ maskType: 'luminance' }}
+      maskUnits="userSpaceOnUse"
+      x="1"
+      y="2"
+      width="22"
+      height="20"
+    >
+      <path
+        d="M15 22C14.6 22 14.2 21.7 14.1 21.3L9 6.2L6.9 12.4C6.8 12.7 6.4 13 6 13H2C1.4 13 1 12.6 1 12C1 11.4 1.4 11 2 11H5.3L8.1 2.7C8.2 2.3 8.6 2 9 2C9.4 2 9.8 2.3 9.9 2.7L15 17.8L17.1 11.6C17.2 11.2 17.6 10.9 18 10.9H22C22.6 10.9 23 11.3 23 11.9C23 12.5 22.6 12.9 22 12.9H18.7L15.9 21.2C15.8 21.7 15.4 22 15 22Z"
+        fill="white"
+      />
+    </mask>
+    <g mask="url(#mask0_4007_43970)">
+      <rect width="24" height="24" fill={color} />
+    </g>
+  </svg>
+);

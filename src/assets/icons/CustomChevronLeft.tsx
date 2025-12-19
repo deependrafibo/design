@@ -1,0 +1,28 @@
+import React from 'react';
+import { CustomIconProps } from './types';
+
+export const CustomChevronLeft: React.FC<CustomIconProps> = ({ width = 24, height = 24, color = '#6E6B7B' }) => (
+  <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M15.7 17.3C16.1 17.7 16.1 18.3 15.7 18.7C15.5 18.9 15.3 19 15 19C14.7 19 14.5 18.9 14.3 18.7L8.3 12.7C7.9 12.3 7.9 11.7 8.3 11.3L14.3 5.3C14.7 4.9 15.3 4.9 15.7 5.3C16.1 5.7 16.1 6.3 15.7 6.7L10.4 12L15.7 17.3Z"
+      fill={color}
+    />
+    <mask
+      id="mask0_4007_47394"
+      style={{ maskType: 'luminance' }}
+      maskUnits="userSpaceOnUse"
+      x="8"
+      y="5"
+      width="8"
+      height="14"
+    >
+      <path
+        d="M15.7 17.3C16.1 17.7 16.1 18.3 15.7 18.7C15.5 18.9 15.3 19 15 19C14.7 19 14.5 18.9 14.3 18.7L8.3 12.7C7.9 12.3 7.9 11.7 8.3 11.3L14.3 5.3C14.7 4.9 15.3 4.9 15.7 5.3C16.1 5.7 16.1 6.3 15.7 6.7L10.4 12L15.7 17.3Z"
+        fill="white"
+      />
+    </mask>
+    <g mask="url(#mask0_4007_47394)">
+      <rect width="24" height="24" fill={color} />
+    </g>
+  </svg>
+);

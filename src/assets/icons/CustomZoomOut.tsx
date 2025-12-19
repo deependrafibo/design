@@ -1,0 +1,32 @@
+import React from 'react';
+import { CustomIconProps } from './types';
+
+export const CustomZoomOut: React.FC<CustomIconProps> = ({ width = 24, height = 24, color = '#6E6B7B' }) => (
+  <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M21.7 20.3L18 16.6C19.2 15.1 20 13.1 20 11C20 6 16 2 11 2C6 2 2 6 2 11C2 16 6 20 11 20C13.1 20 15.1 19.3 16.6 18L20.3 21.7C20.5 21.9 20.8 22 21 22C21.2 22 21.5 21.9 21.7 21.7C22.1 21.3 22.1 20.7 21.7 20.3ZM4 11C4 7.1 7.1 4 11 4C14.9 4 18 7.1 18 11C18 12.9 17.2 14.7 16 15.9C14.7 17.2 13 17.9 11.1 17.9C7.1 18 4 14.9 4 11ZM14 12C14.6 12 15 11.6 15 11C15 10.4 14.6 10 14 10H8C7.4 10 7 10.4 7 11C7 11.6 7.4 12 8 12H14Z"
+      fill={color}
+    />
+    <mask
+      id="mask0_4007_47424"
+      style={{ maskType: 'luminance' }}
+      maskUnits="userSpaceOnUse"
+      x="2"
+      y="2"
+      width="20"
+      height="20"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M21.7 20.3L18 16.6C19.2 15.1 20 13.1 20 11C20 6 16 2 11 2C6 2 2 6 2 11C2 16 6 20 11 20C13.1 20 15.1 19.3 16.6 18L20.3 21.7C20.5 21.9 20.8 22 21 22C21.2 22 21.5 21.9 21.7 21.7C22.1 21.3 22.1 20.7 21.7 20.3ZM4 11C4 7.1 7.1 4 11 4C14.9 4 18 7.1 18 11C18 12.9 17.2 14.7 16 15.9C14.7 17.2 13 17.9 11.1 17.9C7.1 18 4 14.9 4 11ZM14 12C14.6 12 15 11.6 15 11C15 10.4 14.6 10 14 10H8C7.4 10 7 10.4 7 11C7 11.6 7.4 12 8 12H14Z"
+        fill="white"
+      />
+    </mask>
+    <g mask="url(#mask0_4007_47424)">
+      <rect width="24" height="24" fill={color} />
+    </g>
+  </svg>
+);

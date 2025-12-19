@@ -1,0 +1,26 @@
+import React from 'react';
+import { CustomIconProps } from './types';
+
+export const CustomCpu: React.FC<CustomIconProps> = ({ width = 24, height = 24, color = '#6E6B7B' }) => {
+  return (
+    <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M23 13H21V10H23C23.6 10 24 9.6 24 9C24 8.4 23.6 8 23 8H21V6C21 4.3 19.7 3 18 3H16V1C16 0.4 15.6 0 15 0C14.4 0 14 0.4 14 1V3H10V1C10 0.4 9.6 0 9 0C8.4 0 8 0.4 8 1V3H6C4.3 3 3 4.3 3 6V8H1C0.4 8 0 8.4 0 9C0 9.6 0.4 10 1 10H3V13H1C0.4 13 0 13.4 0 14C0 14.6 0.4 15 1 15H3V18C3 19.7 4.3 21 6 21H8V23C8 23.6 8.4 24 9 24C9.6 24 10 23.6 10 23V21H14V23C14 23.6 14.4 24 15 24C15.6 24 16 23.6 16 23V21H18C19.7 21 21 19.7 21 18V15H23C23.6 15 24 14.6 24 14C24 13.4 23.6 13 23 13ZM9 8H15C15.6 8 16 8.4 16 9V15C16 15.6 15.6 16 15 16H9C8.4 16 8 15.6 8 15V9C8 8.4 8.4 8 9 8ZM10 14H14V10H10V14ZM18 19C18.6 19 19 18.6 19 18V6C19 5.4 18.6 5 18 5H6C5.4 5 5 5.4 5 6V18C5 18.6 5.4 19 6 19H18Z"
+        fill={color}
+      />
+      <mask id="mask0" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M23 13H21V10H23C23.6 10 24 9.6 24 9C24 8.4 23.6 8 23 8H21V6C21 4.3 19.7 3 18 3H16V1C16 0.4 15.6 0 15 0C14.4 0 14 0.4 14 1V3H10V1C10 0.4 9.6 0 9 0C8.4 0 8 0.4 8 1V3H6C4.3 3 3 4.3 3 6V8H1C0.4 8 0 8.4 0 9C0 9.6 0.4 10 1 10H3V13H1C0.4 13 0 13.4 0 14C0 14.6 0.4 15 1 15H3V18C3 19.7 4.3 21 6 21H8V23C8 23.6 8.4 24 9 24C9.6 24 10 23.6 10 23V21H14V23C14 23.6 14.4 24 15 24C15.6 24 16 23.6 16 23V21H18C19.7 21 21 19.7 21 18V15H23C23.6 15 24 14.6 24 14C24 13.4 23.6 13 23 13ZM9 8H15C15.6 8 16 8.4 16 9V15C16 15.6 15.6 16 15 16H9C8.4 16 8 15.6 8 15V9C8 8.4 8.4 8 9 8ZM10 14H14V10H10V14ZM18 19C18.6 19 19 18.6 19 18V6C19 5.4 18.6 5 18 5H6C5.4 5 5 5.4 5 6V18C5 18.6 5.4 19 6 19H18Z"
+          fill="white"
+        />
+      </mask>
+      <g mask="url(#mask0)">
+        <rect width="24" height="24" fill={color} />
+      </g>
+    </svg>
+  );
+};
