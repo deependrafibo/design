@@ -9,7 +9,7 @@ import {
   Controller,
 } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { ZodSchema } from 'zod';
+import { z } from 'zod';
 import { Button } from '../button/Button';
 import { Input } from '../input/Input';
 import InputPhone from '../inputPhone/InputPhone';
@@ -49,7 +49,7 @@ export const FormField = ({
   </div>
 );
 
-export type FormProps<TFormValues extends FieldValues, Schema> = {
+export type FormProps<TFormValues extends FieldValues, Schema extends z.ZodType<any, any, any>> = {
   /** The form schema for validation */
   schema: Schema;
   /** Default values for form fields */
@@ -120,7 +120,7 @@ export type FormProps<TFormValues extends FieldValues, Schema> = {
  * </Form>
  * ```
  */
-export const Form = <TFormValues extends FieldValues, Schema extends ZodSchema<any>>({
+export const Form = <TFormValues extends FieldValues, Schema extends z.ZodType<any, any, any>>({
   schema,
   defaultValues,
   onSubmit,
